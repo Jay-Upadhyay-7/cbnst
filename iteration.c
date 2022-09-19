@@ -24,8 +24,9 @@ int main()
 	 do{
 		  x1 = O(x0);
 		  printf("%f\t%f\t%f\t%f\n", x0, f(x0), x1, f(x1));
+		 //prev=x0;
 		  x0 = x1;
-	 }while( fabs(f(x1)) > e);
+	 }while( fabs(f(x1)) > e); //or while( fabs(prev-x0) > e);
 	 printf("\nRoot is %f", x1);
 	 return(0);
 }
